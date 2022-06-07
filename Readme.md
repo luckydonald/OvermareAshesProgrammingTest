@@ -91,4 +91,12 @@ python -m doctest -v hello-hg.py
 ```
 
 
+## Do a commit
+```bash
+cd 'test repo'
+/Applications/TortoiseHg.app/Contents/MacOS/hg commit
+```
+
+
+
 
