@@ -18,8 +18,10 @@ def check_commit_message_has_issue_number_hook(ui, repo, **kwargs):
     To use add the following to your project .hg/hgrc for each
     project you want to check, or to your (global( user hgrc to apply to all projects.
 
+    ```
     [hooks]
     pretxncommit.hello-hg = python:path/to/script/hello-hg.py:check_commit_message_has_issue_number_hook
+    ```
 
     :type ui: MercurialUI
     """
