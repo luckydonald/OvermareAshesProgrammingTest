@@ -26,7 +26,7 @@ def check_commit_message_has_issue_number_hook(ui, repo, **kwargs):
     hg_commit_message = repo['tip'].description()
 
     if not check_commit_message_has_issue_number(hg_commit_message):
-        continue_anyway = ui.promptchoice(ERROR_MESSAGE + b"\nDo you want to commit anyway?" + repr(hg_commit_message) + "  $$ &Yes $$ &No", default=1) == 0
+        continue_anyway = ui.promptchoice(ERROR_MESSAGE + b"\nDo you want to commit anyway? (yN)" + repr(hg_commit_message) + "  $$ &Yes $$ &No", default=1) == 0
         if not continue_anyway:
             raise error.Abort(ERROR_MESSAGE + ": User aborted commit.")
         # end if
