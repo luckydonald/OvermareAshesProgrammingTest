@@ -1,0 +1,3 @@
+[hooks]
+precommit.hello_hg = python:../hello-hg.py:check_commit_message_has_issue_number_hook
+
