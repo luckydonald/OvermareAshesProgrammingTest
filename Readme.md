@@ -82,7 +82,7 @@ https://mercurial.selenic.com/wiki/HookExamples
 
 ## Run tests
 
-Using doctests (the function comments starting with ">>>").
+Using [doctests](https://docs.python.org/3/library/doctest.html) (aka. the function comments starting with `>>>`).
 
 ```bash
 pip install -r requirements-dev.txt
