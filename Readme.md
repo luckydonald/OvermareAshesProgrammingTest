@@ -80,4 +80,15 @@ Source: https://github.com/jrburke/dvcs_jslint/#mercurial
 https://mercurial.selenic.com/wiki/HookExamples
 
 
+## Run tests
+
+Using doctests (the function comments starting with ">>>").
+
+```bash
+pip install -r requirements-dev.txt
+
+python -m doctest -v hello-hg.py
+```
+
+
 
